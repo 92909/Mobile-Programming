@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/wave_bg"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/wave_background" />
+
+    <TextView
+        android:id="@+id/sign_up"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wave_bg"
+        android:layout_marginLeft="160sp"
+        android:layout_marginTop="-61dp"
+        android:padding="15dp"
+        android:text="@string/sign_up"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/sign_in"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wave_bg"
+        android:layout_marginLeft="260dp"
+        android:layout_marginTop="-62dp"
+        android:padding="15dp"
+        android:text="Sign In"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:drawableStart="@drawable/username_icon"
+        android:drawablePadding="8dp"
+        android:padding="12dp"
+        android:id="@+id/user_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/wave_bg"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="5dp"
+        android:layout_marginTop="27dp"
+        android:text="  Username"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:textSize="25dp"
+        android:textStyle="normal" />
+
+    <EditText
+        android:drawableStart="@drawable/fullname_icon"
+        android:drawablePadding="8dp"
+        android:padding="12dp"
+        android:id="@+id/full_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/user_name"
+        android:layout_marginHorizontal="30dp"
+        android:text="  Full Name"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:textSize="25dp"
+        android:textStyle="normal" />
+
+    <EditText
+        android:drawableStart="@drawable/email_icon"
+        android:drawablePadding="8dp"
+        android:padding="12dp"
+        android:id="@+id/e_mail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/full_name"
+        android:layout_marginHorizontal="30dp"
+        android:text="  E-mail"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:textSize="25dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="normal" />
+
+    <EditText
+        android:drawableStart="@drawable/password_icon"
+        android:drawablePadding="8dp"
+        android:padding="12dp"
+        android:id="@+id/pass_word"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/e_mail"
+        android:layout_marginHorizontal="30dp"
+        android:text="  Password"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:textSize="25dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="normal"
+        android:drawableEnd="@drawable/visibility_off"
+        />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:id="@+id/checked_box"
+        android:layout_below="@+id/pass_word"
+        android:text="Agree with Terms and Conditions"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:textSize="20dp"
+        />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:text="Sign Up"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_below="@+id/checked_box"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"/>
+
+
+
+</RelativeLayout>
